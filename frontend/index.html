@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="prediction-card">
+            <p class="eyebrow">MACHINE LEARNING PROJECT</p>
+            <h1>Iris Flower Prediction</h1>
+            <p class="subtitle">
+                Enter the flower measurements to predict its species
+                using a trained neural network.
+            </p>
+
+            <form id="predictionForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="sepal_length">Sepal Length (cm)</label>
+                        <input id="sepal_length" name="sepal_length"
+                               type="number" min="0.1" max="10"
+                               step="any" value="5.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sepal_width">Sepal Width (cm)</label>
+                        <input id="sepal_width" name="sepal_width"
+                               type="number" min="0.1" max="10"
+                               step="any" value="3.5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="petal_length">Petal Length (cm)</label>
+                        <input id="petal_length" name="petal_length"
+                               type="number" min="0.1" max="10"
+                               step="any" value="1.4" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="petal_width">Petal Width (cm)</label>
+                        <input id="petal_width" name="petal_width"
+                               type="number" min="0.1" max="10"
+                               step="any" value="0.2" required>
+                    </div>
+                </div>
+
+                <button id="predictButton" type="submit">
+                    Predict Flower
+                </button>
+            </form>
+
+            <div id="result" class="result" role="status"
+                 aria-live="polite" hidden></div>
+
+            <p class="footer-text">
+                Powered by FastAPI and a neural network
+            </p>
+        </section>
+    </main>
+</body>
+</html>

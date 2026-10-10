@@ -1,0 +1,6 @@
+{
+    "model": "Iris Neural Network",
+    "accuracy": 0.9333,
+    "minimum_accuracy": 0.9,
+    "validation_status": "PASSED"
+}
