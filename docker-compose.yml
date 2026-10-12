@@ -1,0 +1,7 @@
+services:
+  iris-app:
+    build: .
+    container_name: iris-neural-network
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
